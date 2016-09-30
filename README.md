@@ -7,3 +7,8 @@ for file in *.jpg; do convert "$file" -quality 95 -resize 1280x720 "$file"; done
 
 ## Convert videos for serving using HLS (m3u8 playlist)
 [HLS-Stream-Creator](https://github.com/bentasker/HLS-Stream-Creator/)
+
+## Convert PDF to PNG
+```bash
+convert -density 300 input.pdf[0] output.png
+```
