@@ -12,3 +12,8 @@ for file in *.jpg; do convert "$file" -quality 95 -resize 1280x720 "$file"; done
 ```bash
 convert -density 300 input.pdf[0] output.png
 ```
+
+## Make Postgres Dump as SQL
+```bash
+sudo -u postgres pg_dump --no-owner --no-acl --format plain --column-inserts --attribute-inserts dbname > dump.sql
+```
